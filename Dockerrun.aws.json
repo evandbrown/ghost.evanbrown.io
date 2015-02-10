@@ -1,0 +1,18 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "dockerfile/ghost",
+    "Update": "false"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "2368"
+    }
+  ],
+  "Volumes": [
+  {
+    "HostDirectory": "/var/app/current",
+    "ContainerDirectory": "/ghost-override"
+  }
+]
+}

@@ -1,0 +1,26 @@
+{{!< default}}
+{{#contentFor "customBodyClass"}}page-contact{{/contentFor}}
+{{#contentFor "customScript"}}<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>{{/contentFor}}
+{{#post}}
+<main class="body-content" role="main">
+	<section class="{{post_class}} has-sub-meta">
+		<div class="post-header">
+			<div class="gmap-container">
+				<div class="gmap" id="gmap"
+					data-latitude="47.620522" {{!Change Your map latitude here}}
+					data-longitude="-122.349318" {{!Change Your map longitude here}}
+				>
+				</div>
+			</div>
+			<div class="header-wrap">
+				<h2 class="post-title">{{{title}}}</h2>				
+            	<div class="line"></div>         	               
+                <div class="post-meta">You can call me, text me, e-mail me, or find me on a few social networks.</div>
+			</div>
+		</div>		
+		<div class="post-content">						
+			{{content}}
+		</div>			
+	</section>
+</main>
+{{/post}}
