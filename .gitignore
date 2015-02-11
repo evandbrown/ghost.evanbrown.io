@@ -1,3 +1,5 @@
+cfn/launch-params.json
+*.zip
 content/data/ghost-dev.db
 
 # Elastic Beanstalk Files
