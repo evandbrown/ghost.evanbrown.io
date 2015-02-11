@@ -7,7 +7,7 @@
   ],
   "Volumes": [
   {
-    "HostDirectory": "/var/app/current",
+    "HostDirectory": "/var/app/current/ghost-override",
     "ContainerDirectory": "/ghost-override"
   }
 ]
