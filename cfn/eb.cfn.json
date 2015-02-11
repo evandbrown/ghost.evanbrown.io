@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
 
-  "Description": "Parent template to provision resource dependencies and launch the aMediaManager Java Web App on AWS Elastic Beanstalk.",
+  "Description": "evanbrown.io Ghost stack.",
 
   "Parameters": {
     "ApplicationName": {
@@ -11,7 +11,7 @@
     },
     "EnvironmentName": {
       "Type": "String",
-      "Default": "prod"
+      "Default": "evbrownio-prod"
     },
     "AppBucket": {
         "Type": "String",
@@ -95,7 +95,8 @@
         "AllocatedStorage": "5",
         "MasterUserPassword": {
           "Ref": "DatabasePassword"
-        }
+        },
+        "BackupRetentionPeriod": "7"
       }
     },
     "Application": {
@@ -158,6 +159,10 @@
         "VersionLabel": "Initial Version",
         "TemplateName": "DefaultConfiguration",
         "OptionSettings": [{
+          "Namespace": "aws:elasticbeanstalk:environment",
+          "OptionName": "EnvironmentType",
+          "Value": "SingleInstance"
+        },{
           "Namespace": "aws:elasticbeanstalk:application:environment",
           "OptionName": "DB_DATABASE",
           "Value": {
