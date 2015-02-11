@@ -218,12 +218,12 @@
     "RolePolicies": {
       "Type": "AWS::IAM::Policy",
       "Properties": {
-        "PolicyName": "EbApp",
+        "PolicyName": "S3Put",
         "PolicyDocument": {
           "Statement": [{
             "Effect": "Allow",
-            "Action": "*",
-            "Resource": "*"
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::ghost.evanbrown.io/*"
           }]
         },
         "Roles": [{
