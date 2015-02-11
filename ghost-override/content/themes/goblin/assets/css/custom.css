@@ -1,0 +1,11 @@
+/* Hide the author info footer */
+.share-box, .post-footer {
+  display: none;
+  visibility: hidden;
+}
+
+/* Make the home button green */
+#site-intro.left-style .intro-wrap .intro-text .action-list .action-btn.highlight, #site-intro.right-style .intro-wrap .intro-text .action-list .action-btn.highlight {
+  border-color: #229673;
+  background-color: #229673;
+}

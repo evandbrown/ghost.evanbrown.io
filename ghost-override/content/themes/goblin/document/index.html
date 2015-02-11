@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<title>Goblin Ghost Theme Documentation</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="description" content="This documentation contains contains tutorials that will make you easier to configure the theme as you want." />
+    <meta name="keywords" content="Goblin - minimalist and content-focused, Sunflower Theme, Tutorial, Documentation, Text" />
+    <meta name="author" content="Sunflower Theme" />
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/shCoreDefault.css">
+    <!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/html5.js"></script>
+	<![endif]-->
+    <!-- JavaScript -->
+    <script type="text/javascript" src="assets/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/shCore.js"></script>
+    <script type="text/javascript" src="assets/js/shBrushJScript.js"></script>
+    <script type="text/javascript">
+    	SyntaxHighlighter.all();
+    </script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</head>
+<body data-spy="scroll">
+ 	<header id="top">
+	  	<div class="container">
+			<div class="span3">
+				<a href="http://www.sunflowertheme.com" target="_blank">
+					<img src="assets/img/logo.png" alt="sunflowertheme.com"/>
+				</a>
+			</div>
+			<div class="span8">
+				<h1>Goblin Ghost Theme Documentation</h1>
+				<p>This documentation contains tutorials that will make you easier to configure the theme as you want.</p>
+			</div>
+	 	</div>
+ 	</header>
+ 	<div class="container">
+  		<div class="row-fluid">
+   			<div class="span3" id="navigation">
+    			<ul class="nav nav-list">
+					<li class="active"><a href="#version">1. Theme Version</a></li>
+					<li><a href="#change-logs">2. Change Logs</a></li>
+			    	<li><a href="#install">3. Install</a></li>					
+			    	<li><a href="#import-demo-content">4. Import Demo Content</a></li>
+					<li><a href="#setting-up-the-theme">5. Setting up the Theme</a></li>
+					<li><a href="#writing-posts">6. Writing posts</a></li>
+					<li><a href="#using-shortcodes">7. Using Shortcodes</a></li>
+					<li><a href="#custom-theme">8. Custom Theme</a></li>
+					<li><a href="#update">9. Update</a></li>
+					<li><a href="#credits">10. Credits</a></li>
+    			</ul>
+   			</div>
+   			<div class="span9" id="content">
+   				<h4>Thank you very much for purchasing our item.</h4>
+    			<p>
+    				If you have any issue or question that this document does not cover, you can contact us via profile page <a href="http://themeforest.net/user/sunflowertheme"  target="_blank">here</a>. Thanks so much!
+    			</p>
+    			<div class="alert alert-success"> <a class="close" data-dismiss="alert">×</a> <strong>Well Done!</strong> If you like my work, please rate it. If you rate it with less than 5 stars, please let we know the reason first and We will do our best to improve the item.</div>
+    			<h3 id="contents">Table of Contents</h3>
+    			<hr />
+			    <ul class="nav nav-list">
+					<li class="active"><a href="#version">1. Theme Version</a></li>
+					<li><a href="#change-logs">2. Change Logs</a></li>
+			    	<li><a href="#install">3. Install</a></li>					
+			    	<li><a href="#import-demo-content">4. Import Demo Content</a></li>
+					<li><a href="#setting-up-the-theme">5. Setting up the Theme</a></li>
+					<li><a href="#writing-posts">6. Writing posts</a></li>
+					<li><a href="#using-shortcodes">7. Using Shortcodes</a></li>
+					<li><a href="#custom-theme">8. Custom Theme</a></li>
+					<li><a href="#update">9. Update</a></li>
+					<li><a href="#credits">10. Credits</a></li>
+			    </ul>
+				<br/>
+				<br/>
+				<h3 id="version">1. Theme Version</h3>
+				<hr />				
+			    <p>
+					<em>Version number: 1.1.2</em>
+					<br/>
+					<em>Date of release: 12/11/2014</em>
+				</p>
+				<h3 id="change-logs">2. Change Logs</h3>
+			    <pre>
+12/11/2014 v1.1.2
+	==> Fixed miss feature for some redefine style
+10/30/2014 v1.1.1
+	==> Add Full-screen Image support
+10/21/2014 v1.1.0        
+	==> Compatible with Ghost 0.5.x 
+	==> Add Upper-case mode options
+	==> Add Image Cover support for Audio Post format
+	==> Optimize Audio Post Format	
+	==> Optimize Video Post Format
+	==> Optimize UI	
+= 08/13/2014 v1.0.0    
+    ==> Initial Release 1.0.0
+				</pre>
+				<br/>
+				<br/>
+				<h3 id="install">3. Install</h3>
+				<hr />				
+				<div style="padding-left:30px;">
+					<p>
+						<strong>3.1:</strong> Unzip the main file you've downloaded from themeforest.net
+					</p>
+					<p>
+						<strong>3.2:</strong> Select version: 
+					</p>																
+					<ul>
+						<li>Default version: select folder <strong>theme/default/goblin</strong></li>
+						<li>Redefine style 1 (demo 1): select folder <strong>theme/redefined/style1/goblin</strong></li>
+						<li>Redefine style 2 (demo 2): select folder <strong>theme/redefined/style2/goblin</strong></li>
+						<li>Redefine style 3 (demo 3): select folder <strong>theme/redefined/style3/goblin</strong></li>
+						<li>Redefine style 4 (demo 4): select folder <strong>theme/redefined/style4/goblin</strong></li>
+					</ul>						
+					<p>
+						<strong>3.3:</strong> Install Theme
+					</p>
+					<div style="padding-left:30px">
+						<h4>3.3.1 Intall for Ghost Hosted</h4>
+						<ol>
+							<li>
+								<p>Zip the <strong>goblin</strong> folder that you selected from 3.2</p>
+							</li>
+							<li>
+								<p>Sign in on ghost.org and go to <strong>Blog Settings</strong></p>
+								<p>
+									<img src="assets/img/hosted-install-01.png" alt="Blog Settings"/>
+								</p>	
+							</li>
+							<li>
+								<p>Upload goblin zip file to your hosted control panel.</p>
+								<p>
+									<img src="assets/img/hosted-install-02.png" alt="Upload Theme"/>
+								</p>
+							</li>
+						</ol>						
+					</div>
+					<br/>
+					<br/>
+					<div style="padding-left:30px">
+						<h4>3.3.2 Install for Other Host</h4>
+						<ol>
+							<li>
+								<p>
+									Upload the <strong>goblin</strong> folder that you selected from 3.2 to <strong>content/themes/</strong> on ghost hosting folder.
+								</p>
+								<p>
+									<img src="assets/img/screen0.png" alt="Upload"/>
+								</p>
+							</li>
+							<li>							
+								<p>
+									Restart the service of ghost.
+								</p>
+							</li>
+							<li>
+								<p>
+									Login to your Ghost admin, click on the settings options. Select your Theme name in the 'Theme' options dropdown, save it and you are set up with the theme now. Enjoy!
+								</p>
+								<p>
+									<img src="assets/img/screen1.png" alt="Select Theme"/>
+								</p>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<br/>
+				<br/>
+				<h3 id="import-demo-content">4. Import Demo Content</h3>
+				<p>
+					We're recommending you import demo content to know how it works.
+				</p>
+				<ol>
+					<li>
+						<p>Login to your Ghost Admin Dashboard</p>
+					</li>
+					<li>
+						<p>Go to url <strong>your_site_url/<span style="color:red">ghost/debug</span></strong></p>
+					</li>
+					<li>
+						<p>
+							At <strong>Import</strong> section, click <strong>Choose File</strong> and browse to <strong>YOUR_EXTRACT_THEME_FOLDER>demo-data</strong> select goblin.ghost.demo.json and click <strong>Import button</strong>
+						</p>
+						<p>
+							<img src="assets/img/import-demo-content.png" alt="Import Demo Content"/>
+						</p>
+					</li>
+				</ol>
+				<br/>
+				<br/>			    
+			    <h3 id="setting-up-the-theme">5. Setting Up The Theme</h3>
+			    <p>
+			    	You can set the Goblin theme of change some variable in theme file. First of all, you'll need a text editor to open and edit it.
+			    </p>
+			    <p>
+			    	If you have a PC and use Windows, you can install and use <a href="http://notepad-plus-plus.org/" target="_blank"><strong>Notepad++</strong></a>, the most basic text editor on your computer.
+			    </p>
+			    <p>
+			    	If you have a Mac with OS X, you can use <strong>TextEdit</strong>.
+			    </p>
+			    <p>
+			    	After you're done, you need re-upload file changes to your server.
+			    </p>
+			    <br/>
+			    <div style="padding-left:30px">
+					<h4>5.1 Change Theme color</h4>
+					<p>
+						Goblin include 18 redefined colors, if you would like to change the color for the theme please follow the steps below.
+					</p>
+					<ol>
+						<li>
+							<p>
+								open file <strong>default.hbs</strong>
+							</p>
+						</li>
+						<li>
+							<p>
+								On line 48, you will see it like:
+							</p>
+							<pre class="brush: js; ruler: true; first-line: 47; highlight:[48]">
+								&lt;link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" /&gt;
+    							&lt;link rel="stylesheet" type="text/css" href="{{asset "css/colors/default.css"}}" /&gt; {{! Change color scheme here }}  								
+						    </pre>
+						    <p>
+						    	Take a note of the text <strong>css/colors/<span style="color:red;">default.css</span></strong>. Change <strong><span style="color:red;">default.css</span></strong> to color file name that you want.
+								<br>
+								Color file name includes:
+								<ul>
+									<li>
+										default.css
+									</li>
+									<li>
+										blue.css
+									</li>
+									<li>
+										corporate-blue.css
+									</li>
+									<li>
+										dark-slate-gray.css
+									</li>
+									<li>
+										darkcyan.css
+									</li>
+									<li>
+										dodger-blue.css
+									</li>
+									<li>
+										golden-rod.css
+									</li>
+									<li>
+										green.css
+									</li>
+									<li>
+										hot-pink.css
+									</li>
+									<li>
+										indian-red.css
+									</li>
+									<li>
+										medium-violet-red.css
+									</li>
+									<li>
+										muted-teal.css
+									</li>
+									<li>
+										orange.css
+									</li>
+									<li>
+										purple.css
+									</li>
+									<li>
+										red.css
+									</li>
+									<li>
+										sea-green.css
+									</li>
+									<li>
+										soft-green.css
+									</li>
+									<li>
+										yellow.css
+									</li>
+								</ul>
+							</p>
+							<p>
+								Example: I want to use green color, so i made change it to <strong>css/colors/<span style="color:red;">green.css</span></strong>
+							</p>
+							<pre class="brush: js; ruler: true; first-line: 47; highlight:[48]">
+								&lt;link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" /&gt;
+    							&lt;link rel="stylesheet" type="text/css" href="{{asset "css/colors/green.css"}}" /&gt; {{! Change color scheme here }}  								
+						    </pre>
+						</li>
+					</ol>					
+				</div>
+				<br/>
+				<div style="padding-left:30px">
+					<h4>5.2 Change Font</h4>
+					<p>
+						We are using the google web font, if you would like to change the font for the theme please follow the steps below.
+					</p>
+					<ol>
+						<li>
+							<p>
+								Open file <strong>default.hbs</strong>
+							</p>
+							<p>
+								On line 41 you will see it like: 
+							</p>
+							<pre class="brush: js; ruler: true; first-line: 40; highlight:[41]">
+								&lt;meta name="google-site-verification" content=""&gt; {{! Change for Google Webmaster verification }}
+							    &lt;link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'&gt; {{! Change google font here }}    
+							    &lt;link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" /&gt;								
+						    </pre>
+						    <p>
+						    	Replace line 41 to YOUR GOOGLE FONT LINK
+						    </p>
+						</li>
+						<li>
+							<p>
+								Open file assets/css/style.css
+							</p>
+							<p>
+								On line 26 and line 42 you will see it like:
+							</p>
+							<pre class="brush: js; ruler: true; first-line: 25; highlight:[26,42]">
+								*, body {
+									font-family: 'Open Sans', sans-serif;
+									color: #302A2B;
+									font-size: 18px;
+									font-weight: 400;
+									line-height: 38px;
+									-webkit-font-smoothing: antialiased;
+									margin: 0;
+									padding: 0;
+								}
+								body{
+									background-color: #fff;
+								}
+								body[data-site-layout="boxed"]{
+									background-color: #e3eaf0;
+								}
+								h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+									font-family: 'Open Sans', sans-serif;
+									font-weight: 700;
+									line-height: 1.5;
+								}
+							</pre>
+							<p>
+								Replace line 26 and 42 to YOUR GOOGLE FONT FAMILY
+							</p>
+							<p>
+								<img src="assets/img/change-font.png" alt="Change font"/>
+							</p>
+						</li>
+					</ol>				    
+				</div>
+				<br/>
+				<div style="padding-left:30px">
+				    <h4>5.3 Change site layout</h4>
+				    <p>Goblin support boxed and wide layout, please follow the steps below to change your site layout</p>
+				    <ol>
+				    	<li>
+				    		<p>
+				    			Open file <strong>default.hbs</strong>
+				    		</p>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			On line 54 you will see a text line this: <strong>data-site-layout="<span style="color:red;">wide</span>"</strong>. You can change it to <strong>data-site-layout="<span style="color:red;">boxed</span>"</strong> and vice versa.
+				    		</p>
+				    	</li>
+				    </ol>				    
+				</div>
+				<br/>
+				<div style="padding-left:30px">
+					<h4>5.4 Change Post List Mode</h4>
+					<p>Goblin support Multimedia Mode and Plain Text Mode, please follow the steps below to change it for your site</p>
+					<ol>
+				    	<li>
+				    		<p>
+				    			Open file <strong>default.hbs</strong>
+				    		</p>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			On line 55 you will see a text line this: <strong>data-post-mode="<span style="color:red;">multimedia</span>"</strong>. You can change it to <strong>data-post-mode="<span style="color:red;">plain</span>"</strong> and vice versa.
+				    		</p>
+				    	</li>
+				    </ol>		
+				</div>
+				<br/>
+				<div style="padding-left:30px">
+					<h4>5.5 Change Post List Align</h4>
+					<p>Goblin support Left Align and Center Align, please follow the steps below to change it for your site</p>
+					<ol>
+				    	<li>
+				    		<p>
+				    			Open file <strong>default.hbs</strong>
+				    		</p>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			On line 56 you will see a text line this: <strong>data-post-align="<span style="color:red;">left</span>"</strong>. You can change it to <strong>data-post-align="<span style="color:red;">center</span>"</strong> and vice versa.
+				    		</p>
+				    	</li>
+				    </ol>		
+				</div>
+				<br/>
+				<div style="padding-left:30px">
+					<h4>5.6 Change &amp; setting header</h4>
+					<p>
+						Goblin support 4 header style includes: <strong>standard, full-screen, full-screen-center-logo and mini</strong> for customize, please follow the steps below to change it for your site.
+					</p>
+					<ol>
+						<li>
+							<p>Open file <strong>default.hbs</strong></p>
+						</li>
+						<li>
+				    		<p>
+				    			On line 91 you will see a text line this: <strong>{{>header/<span style="color:red;">standard</span>}}</strong>. You can change it to:
+				    			<br/>
+				    			<br/>
+				    			<strong>{{>header/<span style="color:red;">full-screen</span>}}</strong>
+				    			<br/>
+				    			<br/>
+				    			OR
+				    			<br/>
+				    			<br/>
+				    			<strong>{{>header/<span style="color:red;">full-screen-center-logo</span>}}</strong>
+				    			<br/>
+				    			<br/>
+				    			OR
+				    			<br/>
+				    			<br/>
+				    			<strong>{{>header/<span style="color:red;">mini</span>}}</strong>
+				    		</p>				    		
+				    	</li>
+				    	<li>
+				    		<p>
+				    			Next, with each header you have some variable to setting it like: layout, sticky, color scheme and direction, please follow the steps below to change it for your site.
+				    		</p>
+				    		<ol>
+				    			<li>
+				    				<p>
+				    					Open file <strong>partials/header/<span style="color:red;">header_that_you_select_above</span>.hbs</strong>
+				    				</p>
+				    				<p>
+				    					Example: If you select header is <strong>full-screen-center-logo</strong> then open file <strong>partials/header/<span style="color:red;">full-screen-center-logo</span>.hbs</strong>
+				    				</p>
+				    			</li>
+				    			<li>
+				    				<p>
+				    					From lines 2-5 you will see a text like:
+				    				</p>
+				    				<pre class="brush: js; ruler: true; first-line: 2; highlight:[2,3,4,5]">
+				    					data-layout="wide" {{!Header layout option: change it to 'default' or 'wide'}}
+										data-sticky="true" {{!Sticky Header option: change it to 'true' or 'false'}}
+										data-color-scheme="light" {{!Header Color Scheme option: change it to 'dark' or 'light'}}
+										data-direction="default" {{!Header Direction option: change it to 'default' or 'inverse'}}
+				    				</pre>
+				    			</li>
+				    			<li>
+				    				<p>
+				    					You can change values in each variable as <strong>the right instructions</strong>
+				    				<p>
+				    				<p>
+				    					Example: I want to use default layout and disable sticky for my header, i'll change it like this (Take a note of line 2 and 3):
+				    				</p>
+				    				<pre class="brush: js; ruler: true; first-line: 2; highlight:[2,3,4,5]">
+				    					data-layout="default" {{!Header layout option: change it to 'default' or 'wide'}}
+										data-sticky="false" {{!Sticky Header option: change it to 'true' or 'false'}}
+										data-color-scheme="light" {{!Header Color Scheme option: change it to 'dark' or 'light'}}
+										data-direction="default" {{!Header Direction option: change it to 'default' or 'inverse'}}
+				    				</pre>
+				    			</li>
+				    		</ol>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			Finally, you may need to change site logo. By default the theme will be use <strong>Blog Title</strong> for logo. You can upload logo image for your site on <strong>Ghost Admin Dashboard > Settings</strong>
+						    </p>
+						    <p>
+						    	<img src="assets/img/change-logo.png" alt="Change Logo"/>			    		
+						    </p>
+						    <br/>						    
+						    <p>
+						    	<strong>Note: With sticky menu the theme support 2 status logo: normal (logo display on intro screen) and sticked (logo display when user scroll down).</strong>
+						    </p>
+						    <p>
+						    	To apply sticked, please open file <strong>partials/header/<span style="color:red;">header_that_you_select_above</span>.hbs</strong>
+						    </p>						    
+						    <p>
+						    	On line 12 you will see a text like this: <strong><span style="color:red;">data-sticked-src=""</span></strong>. Change it to <strong>data-sticked-src="<span style="color:red;">URL_OF_STICKED_LOGO</span>"</strong>
+						    	<br/>
+						    	<br/>
+						    	Example: <strong>data-sticked-src="<span style="color:red;">{{@blog.url}}/content/images/2014/Aug/sticked-logo.png</span>"</strong>
+						    </p>						    
+				    	</li>
+					</ol>
+				</div>
+				<br/>
+				<div style="padding-left:30px">
+					<h4>5.7 Change &amp; Setting Intro Screen</h4>
+					<p>
+						Goblin support 4 intro screen style includes: <strong>left-style, personal, right-style and standard</strong> for customize, please follow the steps below to change it for your site.
+					</p>
+					<ol>
+						<li>
+							<p>Open file <strong>index.hbs</strong></p>
+						</li>
+						<li>
+				    		<p>
+				    			On line 8 you will see a text line this: <strong>{{>intro/<span style="color:red;">left-style</span>}}</strong>. You can change it to:
+				    			<br/>
+				    			<br/>
+				    			<strong>{{>intro/<span style="color:red;">personal</span>}}</strong>
+				    			<br/>
+				    			<br/>
+				    			OR
+				    			<br/>
+				    			<br/>
+				    			<strong>{{>intro/<span style="color:red;">right-style</span>}}</strong>
+				    			<br/>
+				    			<br/>
+				    			OR
+				    			<br/>
+				    			<br/>
+				    			<strong>{{>intro/<span style="color:red;">standard</span>}}</strong>
+				    		</p>				    		
+				    	</li>
+				    	<li>
+				    		<p>
+				    			Next, with each intro screen you have a variable to setting <strong>more button style</strong>, please follow the steps below to change it for your site.
+				    		</p>
+				    		<ol>
+				    			<li>
+				    				<p>
+				    					Open file <strong>partials/intro/<span style="color:red;">intro_screen_that_you_select_above</span>.hbs</strong>
+				    				</p>
+				    				<p>
+				    					Example: If you select intro screen is <strong>personal</strong> then open file <strong>partials/intro/<span style="color:red;">personal</span>.hbs</strong>
+				    				</p>
+				    			</li>
+				    			<li>
+				    				<p>
+				    					On line 2 you will see a text like:
+				    				</p>
+				    				<pre class="brush: js; ruler: true; first-line: 2; highlight:[2]">
+				    					data-more-button-style="icon-and-text" {{!More detail button option: change it to 'icon-and-text' or 'button-only' or 'icon-only'}}
+				    				</pre>
+				    			</li>
+				    			<li>
+				    				<p>
+				    					You can change value in it as <strong>the right instructions</strong>
+				    				<p>
+				    				<p>
+				    					Example: I want to show button only for my intro screen, i'll change it like this:
+				    				</p>
+				    				<pre class="brush: js; ruler: true; first-line: 2; highlight:[2]">
+				    					data-more-button-style="button-only" {{!More detail button option: change it to 'icon-and-text' or 'button-only' or 'icon-only'}}
+				    				</pre>
+				    			</li>
+				    		</ol>
+				    	</li>
+					</ol>
+				</div>
+				<br/>
+				<div style="padding-left:30px">
+					<h4>5.8 Change &amp; Setting Footer</h4>
+					<p>
+						Goblin support 3 Footer style include: <strong>one-column, two-columns and three-columns</strong> for customize, please follow the steps below to change it for your site.
+					</p>
+					<ol>
+						<li>
+							<p>Open file <strong>default.hbs</strong></p>
+						</li>
+						<li>
+				    		<p>
+				    			On line 100 you will see a text line this: <strong>{{>footer/<span style="color:red;">three-columns</span>}}</strong>. You can change it to:
+				    			<br/>
+				    			<br/>
+				    			<strong>{{>footer/<span style="color:red;">one-column</span>}}</strong>
+				    			<br/>
+				    			<br/>
+				    			OR
+				    			<br/>
+				    			<br/>
+				    			<strong>{{>footer/<span style="color:red;">two-columns</span>}}</strong>
+				    		</p>				    		
+				    	</li>
+				    	<li>
+				    		<p>
+				    			Next, with each footer you have a variable to setting <strong>layout style</strong>, please follow the steps below to change it for your site.
+				    		</p>
+				    		<ol>
+				    			<li>
+				    				<p>
+				    					Open file <strong>partials/footer/<span style="color:red;">footer_that_you_select_above</span>.hbs</strong>
+				    				</p>
+				    				<p>
+				    					Example: If you select footer is <strong>two-columns</strong> then open file <strong>partials/footer/<span style="color:red;">two-columns</span>.hbs</strong>
+				    				</p>
+				    			</li>
+				    			<li>
+				    				<p>
+				    					On line 2 you will see a text like:
+				    				</p>
+				    				<pre class="brush: js; ruler: true; first-line: 2; highlight:[2]">
+				    					data-layout="wide" {{!Footer layout option: change it to default or wide}}
+				    				</pre>
+				    			</li>
+				    			<li>
+				    				<p>
+				    					You can change value in it as <strong>the right instructions</strong>
+				    				<p>
+				    				<p>
+				    					Example: I want to use default layout for my footer, i'll change it like this:
+				    				</p>
+				    				<pre class="brush: js; ruler: true; first-line: 2; highlight:[2]">
+				    					data-layout="default" {{!Footer layout option: change it to default or wide}}
+				    				</pre>
+				    			</li>
+				    		</ol>
+				    	</li>
+					</ol>
+				</div>
+				<div style="padding-left:30px">
+				    <h4>5.9 Change Social Network Icons</h4>
+					<p>
+						In this section you can change Social Network Icons on the Header, Personal Intro Screen and Footer
+					</p>
+					<p><strong><em>File: partials/social-icons.hbs</em></strong></p>
+				    <pre class="brush: js; ruler: true; first-line: 1; highlight:[4,5,6,7,8,12,13,14,15,16,20,21,22,23,24,27]">						
+		                {{!Begin of Social Icon List}}
+						&lt;ul class="social"&gt;
+							{{!Begin Social item}}
+							&lt;li class="google"&gt;
+								&lt;a href="#" target="_blank" title="Google"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+									&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;
+								&lt;/a&gt;
+							&lt;/li&gt;
+							{{!End Social item}}
+
+							{{!Begin Social item}}
+							&lt;li class="twitter"&gt;
+								&lt;a href="#" target="_blank" title="Twitter"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+									&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;
+								&lt;/a&gt;
+							&lt;/li&gt;
+							{{!End Social item}}
+
+							{{!Begin Social item}}
+							&lt;li class="facebook"&gt;
+								&lt;a href="#" target="_blank" title="Facebook"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+									&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;
+								&lt;/a&gt;
+							&lt;/li&gt;
+							{{!End Social item}}
+
+							{{!Add New Social item here}}
+						&lt;/ul&gt;
+						{{!End of Social Icon List}}
+				    </pre>
+				    <p>
+				    	What you need is change href value to your social url, you can also copy new social icon in the list below and paste it to line 27
+				    </p>				    
+				    <p>
+				    	Here full list of social icons that the theme support:
+				    </p>
+				    <ul>
+				    	<li>
+				    		<p>
+				    			<strong>Facebook</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="facebook"&gt;
+									&lt;a href="#" target="_blank" title="Facebook"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-facebook"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>Twitter</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="twitter"&gt;
+									&lt;a href="#" target="_blank" title="Twitter"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-twitter"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>Google Plus</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="google"&gt;
+									&lt;a href="#" target="_blank" title="Google"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>LinkedIn</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="linkedin"&gt;
+									&lt;a href="#" target="_blank" title="linkedin"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>vkontakte</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="vkontakte"&gt;
+									&lt;a href="#" target="_blank" title="vkontakte"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-vk"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>xing</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="xing"&gt;
+									&lt;a href="#" target="_blank" title="xing"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-xing"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>skype</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="skype"&gt;
+									&lt;a href="#" target="_blank" title="skype"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-skype"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>yahoo</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="yahoo"&gt;
+									&lt;a href="#" target="_blank" title="yahoo"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-yahoo"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>flickr</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="flickr"&gt;
+									&lt;a href="#" target="_blank" title="flickr"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-flickr"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>instagram</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="instagram"&gt;
+									&lt;a href="#" target="_blank" title="instagram"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-instagram"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>behance</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="behance"&gt;
+									&lt;a href="#" target="_blank" title="behance"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-behance"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>dribbble</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="dribbble"&gt;
+									&lt;a href="#" target="_blank" title="dribbble"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-dribbble"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>pinterest</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="pinterest"&gt;
+									&lt;a href="#" target="_blank" title="pinterest"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-pinterest"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>deviantart</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="deviantart"&gt;
+									&lt;a href="#" target="_blank" title="deviantart"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-deviantart"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>youtube</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="youtube"&gt;
+									&lt;a href="#" target="_blank" title="youtube"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-youtube"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>vimeo</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="vimeo"&gt;
+									&lt;a href="#" target="_blank" title="vimeo"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-vimeo"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>soundcloud</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="soundcloud"&gt;
+									&lt;a href="#" target="_blank" title="soundcloud"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-soundcloud"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>spotify</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="spotify"&gt;
+									&lt;a href="#" target="_blank" title="spotify"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-spotify"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>wordpress</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="wordpress"&gt;
+									&lt;a href="#" target="_blank" title="wordpress"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-wordpress"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>tumblr</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="tumblr"&gt;
+									&lt;a href="#" target="_blank" title="tumblr"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-tumblr"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>reddit</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="reddit"&gt;
+									&lt;a href="#" target="_blank" title="reddit"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-reddit"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>digg</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="digg"&gt;
+									&lt;a href="#" target="_blank" title="digg"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-digg"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>stumbleupon</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="stumbleupon"&gt;
+									&lt;a href="#" target="_blank" title="stumbleupon"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-stumbleupon"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>delicious</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="delicious"&gt;
+									&lt;a href="#" target="_blank" title="delicious"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-delicious"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>foursquare</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="foursquare"&gt;
+									&lt;a href="#" target="_blank" title="foursquare"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-foursquare"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>github</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="github"&gt;
+									&lt;a href="#" target="_blank" title="github"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-github"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>dropbox</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="dropbox"&gt;
+									&lt;a href="#" target="_blank" title="dropbox"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-dropbox"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>rss</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="rss"&gt;
+									&lt;a href="#" target="_blank" title="rss"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-rss"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    	<li>
+				    		<p>
+				    			<strong>email</strong>
+				    		</p>
+				    		<pre class="brush: js; ruler: true;">
+				    			&lt;li class="email"&gt;
+									&lt;a href="#" target="_blank" title="email"&gt; {{!Change href="#" to href="YOUR_SOCIAL_URL"}}
+										&lt;i class="fa fa-envelope-o"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+									&lt;/a&gt;
+								&lt;/li&gt;
+				    		</pre>
+				    	</li>
+				    </ul>
+				</div>
+				<br/>
+				<div style="padding-left:30px">
+					<h4>5.10 Menu Config</h4>								
+					<p>
+						In this section you can Add/Edit Menu display on your Header
+					</p>
+					<ol>
+						<li>
+							<strong>Step 1: Create a Static Page</strong>
+							<p>
+								<img src="assets/img/create-static-page.png" alt=""/>
+							</p>
+						</li>
+						<li>
+							<strong>Step 2: Intergate to Menu</strong>
+							<p>Open File: <strong><em>partials/menu-items.hbs</em></strong> and follow the instruction below</p>
+							<pre class="brush: js; ruler: true; first-line: 72; highlight:[81,82,83,94,95,96,107,108,109]">
+								&lt;li class="active"&gt;
+									&lt;a href="{{@blog.url}}"&gt; &lt;!--Keep href="{{@blog.url}}" for home page--&gt;
+										Home &lt;!--Change text of menu here--&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								{{!End Menu Item}}
+
+								{{!Begin Menu Item}}
+								&lt;li&gt;
+									&lt;a href="{{@blog.url}}/about/"&gt; &lt;!--Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/  Example: {{@blog.url}}/about/--&gt;
+										About &lt;!--Change text of menu here--&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								{{!End Menu Item}}
+
+								{{!Begin Menu Item}}
+								&lt;li&gt;
+									&lt;a href="{{@blog.url}}/resume/"&gt; &lt;!--Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/  Example: {{@blog.url}}/resume/--&gt;
+										Resume &lt;!--Change text of menu here--&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								{{!End Menu Item}}
+
+								{{!Begin Menu Item}}
+								&lt;li&gt;
+									&lt;a href="{{@blog.url}}/contact/"&gt; &lt;!--Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/  Example: {{@blog.url}}/contact/--&gt;
+										Contact &lt;!--Change text of menu here--&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								{{!End Menu Item}}
+								{{!Create your next Menu Item}}
+							</pre>						
+						</li>
+					</ol>
+				</div>
+				<br/>
+				<div style="padding-left:30px">				
+					<h4>5.11 Config MailChimp Newsletter</h4>
+					<p>
+						In this section you can change the intro text (line 2) and mailchimp submit url (line 4) that use of MailChimp Newsletter Popup
+					</p>
+					<p><strong><em>File: partials/widget/newsletter.hbs</em></strong></p>
+					<pre class="brush: js; ruler: true; first-line: 1;highlight:[2,4]">			    
+						&lt;p&gt;
+							Sign up to receive email updates and to hear what's going on with me!
+						&lt;/p&gt;
+						&lt;form id="mc-form" action="YOUR_WEB_FORM_URL_HERE" method="post" novalidate="true"&gt;
+							&lt;div class="input-group"&gt;
+								&lt;input id="mc-email" type="email" name="EMAIL" placeholder="Email address" class="form-control" required &gt;
+								&lt;span class="input-group-btn"&gt;
+									&lt;button class="btn btn-default" type="submit"&gt;Subscribe&lt;/button&gt;
+								&lt;/span&gt;
+							&lt;/div&gt;
+						&lt;/form&gt;				
+					</pre>
+					<p>
+						Check out <a href="http://kb.mailchimp.com/article/how-can-i-add-my-signup-form-on-my-website"  target="_blank">this link</a> for more detail about adding mailchimp form to your widget. <em>Note: In this case you only need to copy web form action and change for YOUR_WEB_FORM_URL_HERE (line 7).</em>
+					</p>
+				</div>
+			    <br/>
+			    <div style="padding-left:30px">	
+					<h4>5.12 Comment System Config</h4>					
+					<div style="padding-left:30px">
+						<p>
+							<strong>5.12.1 Disqus Comment (Default config in your download)</strong>
+						</p>
+						<p>
+							By Default, this theme supports comments supplied by Disqus (http://disqus.com). For assistance in setting up your own Disqus account and customizing it for your needs, please see the Disqus QuickStart Guide: <a href="http://help.disqus.com/customer/portal/articles/466182-quick-start-guide">http://help.disqus.com/customer/portal/articles/466182-quick-start-guide</a>
+						</p>
+						<p>					
+							Change content in the files below to turn on Disqus Comment 
+						</p>
+						<p><strong><em>File: partials/comment-box.hbs</em></strong></p>				
+						<pre class="brush: js; ruler: true; first-line: 1; highlight:[6]">
+							{{! Change your comment system here, include:
+								+ comment/disqus
+								+ comment/googleplus
+								+ comment/facebook
+							}}
+							{{>comment/disqus}}
+						</pre>
+						<p>
+							<strong><em>File: partials/comment/disqus.hbs</em></strong>, replace YOUR_DISQUS_SHORTNAME with your Disqis shortname.
+						</p>				
+						<pre class="brush: js; ruler: true; first-line: 2; highlight:[3]">
+							&lt;script type="text/javascript"&gt;
+								var disqus_shortname = 'YOUR_DISQUS_SHORTNAME';
+								/* * * DON'T EDIT BELOW THIS LINE * * */
+								(function() {
+									var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+									dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+									(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+								})();
+							&lt;/script&gt;
+						</pre>						
+					</div>
+					<br/>				
+					<div style="padding-left:30px">					
+						<p>
+							<strong>5.12.2 Facebook Comment</strong>
+						</p>
+						<p>					
+							Change content in the files below to turn on Facebook Comment 
+						</p>
+						<p><strong><em>File: partials/comment-box.hbs</em></strong></p>				
+						<pre class="brush: js; ruler: true; first-line: 1; highlight:[6]">
+							{{! Change your comment system here, include:
+								+ comment/disqus
+								+ comment/googleplus
+								+ comment/facebook
+							}}
+							{{>comment/facebook}}
+						</pre>
+						<p>
+							You will need a Facebook Application ID, check out <a href="https://developers.facebook.com/apps‎" target="_blank">this link</a> to register Facebook Application.
+						</p>
+						<p>
+							<strong><em>File: partials/comment/facebook.hbs</em></strong>, replace YOUR_APP_ID with your Facebook Application ID.
+						</p>				
+						<pre class="brush: js; ruler: true; first-line: 2; highlight:[7]">
+							&lt;script&gt;
+								(function(d, s, id) {
+									var js, fjs = d.getElementsByTagName(s)[0];
+									if (d.getElementById(id)) return;
+									js = d.createElement(s); js.id = id;
+									js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=YOUR_APP_ID";
+									fjs.parentNode.insertBefore(js, fjs);
+								}(document, 'script', 'facebook-jssdk'));
+							&lt;/script&gt;
+						</pre>					
+					</div>
+					<br/>				
+					<div style="padding-left:45px">	
+						<p>
+							<strong>5.15.3 Google Plus Comment</strong>
+						</p>				
+						<p>					
+							Change content in the files below to turn on Google Plus Comment 
+						</p>
+						<p><strong><em>File: partials/comment-box.hbs</em></strong></p>				
+						<pre class="brush: js; ruler: true; first-line: 1; highlight:[6]">
+							{{! Change your comment system here, include:
+								+ comment/disqus
+								+ comment/googleplus
+								+ comment/facebook
+							}}
+							{{>comment/googleplus}}
+						</pre>					
+					</div>
+				</div>
+				<br/>	
+				<div style="padding-left:30px">				
+					<h4>5.13 Config Google Map for Contact Page</h4>					
+					<p>
+						Open file <strong><em>page-contact.hbs</em></strong>, at line 10-11
+					</p>
+					<pre class="brush: js; ruler: true; first-line: 10; highlight:[10,11]">
+						data-latitude="10.839776" {{!Change Your map latitude here}}
+						data-longitude="106.647159" {{!Change Your map longitude here}}
+					</pre>
+				</div>
+				<br/>	
+				<div style="padding-left:30px">				
+					<h4>5.14 Turn On / Turn Off Upper-case mode</h4>					
+					<p>
+						Open file <strong><em>default.hbs</em></strong>, on line 54 you will see a text line this: <strong>data-uppercase="<span style="color:red;">true</span>"</strong>. You can change it to <strong>data-uppercase="<span style="color:red;">false</span>"</strong> if you want to Turn Off Upper-case mode. Change it to <strong>data-uppercase="<span style="color:red;">true</span>"</strong> if you want to Turn On Upper-case mode
+					</p>
+					<pre class="brush: js; ruler: true; first-line: 57; highlight:[57]">
+						data-uppercase="true" {{!Uppercase style: change it to 'true' or 'false'  }}
+					</pre>
+				</div>
+				<h3 id="writing-posts">6. Writing Posts</h3>
+				<p>
+					There are some notes when you write posts:
+				</p>
+				<ul>
+					<li>
+						<p><strong>Image Post Format</strong></p>
+						<p>
+							+ With Ghost 0.5.0, Put image <strong>![<span style="color:red;">thumb image-post mask</span>](YOUR_IMAGE_URL)</strong> in the top of post and upload image for Image Post Format
+						</p>
+						<p>
+							<img src="assets/img/image-post-format.png" alt="Image Post Format"/>
+						</p>
+						<br/>
+						<br/>
+						<p>
+							+ With Ghost 0.5.2, you can easy choose Image for your Post on Post Setting Panel.
+						</p>	
+						<p>
+							<img src="assets/img/image-post-format-2.png" alt="Image Post Format Ghost 0.5.2"/>
+						</p>						
+					</li>
+					<li>
+						<p><strong>Audio Post Format (Support soundcloud)</strong></p>
+						<p>
+							+ Put soundcloud url <strong>[](YOUR_SOUNDCLOUD_URL_HERE)</strong> in the top of post
+						</p>
+						<p>
+							<img src="assets/img/audio-post-format.png" alt="Audio Post Format By Link"/>
+						</p>
+						<p>
+							+ OR put soundcloud embed code in the top of post
+						</p>
+						<pre class="brush: js; ruler: true; first-line: 1; highlight:[]">
+							&lt;iframe height="166" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/104708200"&gt;&lt;/iframe&gt;
+						</pre>
+						<p>
+							<img src="assets/img/audio-post-format-2.png" alt="Audio Post Format By Iframe"/>
+						</p>							
+						<p>
+							+ With Ghost 0.5.2, you can easy choose Image for your Post on Post Setting Panel.
+						</p>	
+						<p>
+							<img src="assets/img/image-post-format-2.png" alt="Image Post Format Ghost 0.5.2"/>
+						</p>
+						<br/>
+						<br/>							
+					</li>
+					<li>
+						<p><strong>Video Post Format (Support Vimeo and Youtube)</strong></p>
+						<p>
+							+ Put soundcloud url <strong>[](YOUR_VIMEO_OR_YOUTUBE_URL_HERE)</strong> in the top of post
+						</p>
+						<p>
+							<img src="assets/img/video-post-format.png" alt="Video Post Format By Link"/>
+						</p>
+						<p>
+							+ OR put <strong>vimeo embed code</strong> or <strong>youtube embed code</strong> in the top of post
+						</p>
+						<pre class="brush: js; ruler: true; first-line: 1; highlight:[]">
+							&lt;iframe width="560" height="315" src="//www.youtube.com/embed/aeLTx-ZhlFQ"&gt;&lt;/iframe&gt;
+						</pre>
+						<p>
+							<img src="assets/img/video-post-format-2.png" alt="Video Post Format By Iframe"/>
+						</p>
+						<br/>
+						<br/>												
+					</li>
+				</ul>												
+			    <h3 id="using-shortcodes">7. Using Shortcodes</h3>
+			    <p>
+			    	At present Goblin only support html shortcode from BootStrap Framework. Check out <a href="http://getbootstrap.com/" target="_blank">this link</a>, copy short code and paste to post content area.
+			    </p>
+			    <h3 id="custom-theme">8. Custom Theme</h3>
+			    <p><strong><em>File: assets/css/custom.css</em></strong></p>
+			    <p>
+			    	Add your custom styles here instead of screen.css so it is easier to update your theme. Simply copy an existing style from screen.css to this file, and modify it to your liking.
+			    </p>
+			    <h3 id="update">9. Update</h3>
+				<h5>9.1 File &amp; Folder Changes:</h5>
+				<pre>
+= [Modify] /theme/redefine/style3/goblin/partials/loop.hbs
+				</pre>
+				<br/>
+				<br/>
+				<h5>9.2 Update Steps:</h5>
+				<ol>
+					<li>
+						<p><strong>Backup files:</strong></p>
+						<p>On your server, backup all [Modify] files of Change logs list above.</p>
+					</li>					
+					<li>
+						<p><strong>Upload new files:</strong></p>
+						<p>Upload all [Modify] files of Change log list above from themeforest download package to your server with overwrite option.</p>
+					</li>
+					<li>
+						<p><strong>Re-config your last customize files (from v1.1):</strong></p>
+						<p>Re-mix your last customize from <strong>backup files</strong> if you have made change it from v1.1.</p>
+					</li>
+				</ol>
+			    <p>
+					<strong>We tread on the heels of Ghost. If you need any extra or feature just email us and we will include it in the next update.</strong> 
+				</p>
+			    <h3 id="credits">10. Credits</h3>
+			    <h5>10.1 Javascript</h5>
+			    <p>Goblin uses several scripts many of which are documented within the theme's code. If you're a developer, you will find this particularly useful.</p>
+			    <ul class="nav nav-list">
+					<li>
+						<a href="http://getbootstrap.com/" target="_blank">
+							<i class="icon-chevron-right"></i> Bootstrap Framework
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/ReactiveRaven/jqBootstrapValidation" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery Bootstrap Validation
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/pupunzi/jquery.mb.YTPlayer" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery mb.YTPlayer
+						</a>
+					</li>					
+					<li>
+						<a href="http://fitvidsjs.com/" target="_blank">
+							<i class="icon-chevron-right"></i> FitVids
+						</a>
+					</li>
+					<li>
+						<a href="http://wave64.it/" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery Wave64
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/soundcloud/soundcloud-custom-player" target="_blank">
+							<i class="icon-chevron-right"></i> SoundCloud Custom Player jQuery Plugin
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/soundcloud/soundcloud-custom-player" target="_blank">
+							<i class="icon-chevron-right"></i> Soundcloud Player API
+						</a>
+					</li>
+					<li>
+						<a href="http://desandro.github.io/imagesloaded/" target="_blank">
+							<i class="icon-chevron-right"></i> imagesLoaded
+						</a>
+					</li>					
+					<li>
+						<a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">
+							<i class="icon-chevron-right"></i> Magnific Popup
+						</a>
+					</li>
+					<li>
+						<a href="http://prismjs.com/" target="_blank">
+							<i class="icon-chevron-right"></i> Prism
+						</a>
+					</li>
+					<li>
+						<a href="http://momentjs.com/" target="_blank">
+							<i class="icon-chevron-right"></i> Moment.js
+						</a>
+					</li>
+					<li>
+						<a href="http://mths.be/placeholder" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery Placeholder
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/galambalazs/smoothscroll" target="_blank">
+							<i class="icon-chevron-right"></i> SmoothScroll v1.2.1
+						</a>
+					</li>
+			    </ul>
+			    <h5>10.2 Images</h5>
+			    <p>
+			    	Images showed on preview files are from <a href="http://pixabay.com" target="_blank">pixabay.com</a> and <a href="http://subtlepatterns.com" target="_blank">subtlepatterns.com</a>. Being designed with multipurpose attitude in mind, we showed some images on our preview files so you can have an idea what can be accomplished. Not a single image file is included with the download, they were just for demo purposes due to copyright.
+			    </p>
+			    <h5>10.3 Fonts</h5>
+				<ul>
+					<li>
+						<strong>Google Fonts</strong> - <a href="http://www.google.com/webfonts"  target="_blank">http://www.google.com/webfonts</a>
+					</li>
+					<li>
+						<strong>Font Awesome</strong> - <a href="http://fortawesome.github.com/Font-Awesome/"  target="_blank">http://fortawesome.github.com/Font-Awesome/</a>
+					</li>
+				</ul>
+			    <br />
+			    <p>
+			    	Once again, thank you so much for purchasing this theme. As We said at the beginning, We'd be glad to help you if you have any questions relating to this theme. Please contact us via email or social media. We'll do our best to assist!
+			    </p>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="container">Copyright &copy; 2014 by Sunflower Theme. All rights reserved.</div>
+	</footer>
+</body>
+</html>

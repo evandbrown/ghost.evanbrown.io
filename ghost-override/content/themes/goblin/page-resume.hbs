@@ -1,0 +1,29 @@
+{{!< default}}
+{{#contentFor "customBodyClass"}}page-resume{{/contentFor}}
+
+{{#post}}
+<main class="body-content" role="main">
+	<section class="{{post_class}} has-sub-meta">
+		<div class="post-header has-background"
+			{{#if image}}
+				style="background-image: url({{image}}); background-position: top center"
+			{{else}}
+				{{#if author.cover}}
+					style="background-image: url({{author.cover}})"
+				{{else}} 
+					{{#if @blog.cover}}
+					style="background-image: url({{@blog.cover}})"
+					{{/if}}
+				{{/if}}
+			{{/if}}>
+			<div class="header-wrap">
+				<h2 class="post-title">Résumé</h2>	
+                <div class="post-meta">I'm a Solutions Architect at Google, working on Google Cloud Platform. Building and automating large systems is in my wheelhouse.</div>-->
+            </div>
+		</div>
+		<div class="post-content">
+           {{content}}
+		</div>			
+	</section>
+</main>
+{{/post}}
