@@ -1,5 +1,9 @@
 {
   "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "evandbrown/evanbrownio:latest",
+    "Update": "true"
+  },
   "Ports": [
     {
       "ContainerPort": "2368"
