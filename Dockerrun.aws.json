@@ -4,11 +4,5 @@
     {
       "ContainerPort": "2368"
     }
-  ],
-  "Volumes": [
-  {
-    "HostDirectory": "/var/app/current/ghost-override",
-    "ContainerDirectory": "/ghost-override"
-  }
-]
+  ]
 }
