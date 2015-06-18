@@ -33,6 +33,9 @@ config = {
             host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '2368'
+        },
+        paths: {
+            contentPath: path.join(process.env.GHOST_CONTENT, '/')
         }
     },
 
@@ -63,7 +66,7 @@ config = {
             port: '2368'
         },
         paths: {
-            contentPath: path.join(__dirname, '/content/')
+            contentPath: path.join(process.env.GHOST_CONTENT, '/')
         }
     },
 
